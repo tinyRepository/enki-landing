@@ -1,0 +1,9 @@
+@import 'libs';
+@import 'mixins';
+@import 'vars';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import 'media';
