@@ -1,0 +1,94 @@
+.calculation-formwork {
+  margin-top: 120px;
+
+  &__title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 40px;
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__advantages-item {
+    padding: 20px;
+    background: #f4f6fc;
+    border-radius: 6px;
+  }
+
+  &__advantages-icon {
+    margin-bottom: 13px;
+  }
+
+  &__advantages-title {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+
+  &__advantages-description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #5e6066;
+    margin-bottom: 20px;
+  }
+
+  &__order {
+    display: flex;
+    padding: 20px;
+    background: #f4f6fc;
+    border-radius: 6px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__order-title {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  &__order-button {
+    width: fit-content;
+  }
+
+  &__order-image {
+    max-width: 140px;
+    position: absolute;
+    bottom: -50px;
+    right: -40px;
+  }
+}
