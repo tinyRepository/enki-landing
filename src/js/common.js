@@ -2,7 +2,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.stats__number');
   const statsSection = document.querySelector('.stats');
-  const duration = 2000; // Продолжительность анимации в миллисекундах
+  const duration = 2000;
+
+  const numberFormat = new Intl.NumberFormat('en-US', {
+    useGrouping: true,
+    minimumFractionDigits: 0,
+  });
 
   const animateCounter = (counter) => {
     const target = +counter.getAttribute('data-target');
@@ -16,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const progress = Math.min(elapsedTime / duration, 1);
       const currentValue = Math.ceil(progress * range + startValue);
 
-      counter.innerText = currentValue;
+      counter.innerText = numberFormat.format(currentValue).replace(/,/g, ' ');
 
       if (progress < 1) {
         requestAnimationFrame(updateCount);
