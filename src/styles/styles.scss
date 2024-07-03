@@ -1,9 +1,87 @@
+@import 'fonts';
 @import 'libs';
 @import 'mixins';
 @import 'vars';
 
 html {
   scroll-behavior: smooth;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #f7971e 0%, #ffcc00 62.45%);
+  border-radius: 6px;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  &__discount {
+    color: #fefeff;
+    background: #365edc;
+    padding: 6px 10px;
+
+    width: 171px;
+    height: 49px;
+
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin-top: 20px;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Black', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    max-width: 500px;
+
+    color: #fefeff;
+  }
+
+  &__description {
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #fefeff;
+    max-width: 474px;
+  }
+
+  &__image {
+    position: relative;
+    max-width: 489px;
+    max-height: 295px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &--percent {
+      position: relative;
+      z-index: 1;
+    }
+
+    &--ellipse {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
 
 @import 'media';

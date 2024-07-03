@@ -93,6 +93,10 @@ gulp.task('buildImage', function () {
   return gulp.src('src/img/**/*').pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('buildFonts', function () {
+  return gulp.src('src/fonts/**/*').pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task(
   'build',
   gulp.series(
@@ -102,6 +106,7 @@ gulp.task(
     'import',
     'buildCss',
     'buildImage',
+    'buildFonts',
     'buildJs',
     'buildHtml'
   )
