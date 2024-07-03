@@ -11,6 +11,16 @@
     border-radius: 6px;
     display: flex;
     min-height: 112px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 5px 30px rgba(34, 34, 34, 0.1);
+
+      .steps__item-label::after {
+        width: 0;
+      }
+    }
   }
 
   &__item-label {
@@ -33,6 +43,7 @@
       background: #ffcc00;
       bottom: -5px;
       left: 0;
+      transition: width 0.3s;
     }
   }
 

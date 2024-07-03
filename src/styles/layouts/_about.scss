@@ -17,6 +17,7 @@
     color: #222222;
     position: relative;
     grid-area: item;
+    cursor: pointer;
 
     &:nth-child(1) {
       grid-area: item1;
@@ -45,6 +46,13 @@
       width: 60px;
       height: 3px;
       background: #ffcc00;
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      &::before {
+        width: 0;
+      }
     }
   }
 
