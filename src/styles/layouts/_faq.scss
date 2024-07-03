@@ -1,0 +1,73 @@
+.faq {
+  margin-top: 120px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+
+    &.active {
+      border-color: #365edc;
+
+      .faq {
+        &__item-title {
+          color: #365edc;
+        }
+
+        &__item-description {
+          display: block;
+        }
+
+        &__item-arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__item-arrow {
+    user-select: none;
+    transition: transform 0.3s ease;
+  }
+
+  &__item-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__item-title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+
+  &__item-description {
+    padding: 15px 20px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    max-height: 0;
+
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 60px;
+  }
+}
