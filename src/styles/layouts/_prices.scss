@@ -1,0 +1,63 @@
+.prices {
+  margin-bottom: 120px;
+
+  &__image {
+    max-width: 326px;
+    margin-right: 90px;
+  }
+
+  &__button {
+    max-width: 237px;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 60px;
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  &__tab-content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 320px + 90px;
+  }
+
+  &__tab-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tab-content-description {
+    margin-bottom: 30px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+  }
+
+  &__tab-item {
+    background: #f4f6fc;
+    border-radius: 6px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    padding: 10px;
+    color: #222222;
+    width: max-content;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      color: #365edc;
+      cursor: default;
+    }
+  }
+}

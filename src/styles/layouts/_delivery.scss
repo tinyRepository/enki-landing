@@ -1,6 +1,7 @@
 .delivery {
   display: flex;
   margin-top: 120px;
+  gap: 30px;
 
   &__title {
     font-family: 'Proxima Nova', sans-serif;
@@ -33,6 +34,8 @@
 
   &__crane-container {
     height: 100%;
+    right: -33px;
+    position: relative;
   }
 
   &__crane {
