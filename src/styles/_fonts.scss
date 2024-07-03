@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto.eot');
+  src: url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto.ttf') format('truetype'), url('../fonts/Roboto.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Proxima Nova Regular';
   src: url('../fonts/ProximaNova-Regular.eot');
   src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
