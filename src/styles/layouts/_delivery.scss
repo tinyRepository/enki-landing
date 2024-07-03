@@ -1,0 +1,110 @@
+.delivery {
+  display: flex;
+  margin-top: 120px;
+
+  &__title {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 81px;
+  }
+
+  &__car {
+    max-width: 100%;
+  }
+
+  &__payment-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffcc00;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+  }
+
+  &__crane-container {
+    height: 100%;
+  }
+
+  &__crane {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  &__steps {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+  }
+
+  &__step-item {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url('../../img/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 0;
+    }
+  }
+
+  &__payment-options-item {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: #fff;
+      background-image: url('../../img/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 0;
+    }
+  }
+
+  &__payment-options-title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__payment-options-list {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
