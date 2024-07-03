@@ -1,0 +1,22 @@
+.services {
+  margin: 120px 0;
+
+  &__title {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}

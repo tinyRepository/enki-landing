@@ -52,6 +52,11 @@
     border: 1px solid #eaeaea;
     box-sizing: border-box;
     outline: none;
+
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #999999;
   }
 
   &__button {
@@ -67,6 +72,6 @@
   }
 
   &__image {
-    max-height: 360px;
+    max-height: 363px;
   }
 }
