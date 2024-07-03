@@ -73,3 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Tabs switcher
+const tabItems = document.querySelectorAll('.prices__tab-item');
+const tabTargets = document.querySelectorAll('.prices__tab-target');
+
+tabItems.forEach((tabItem, index) => {
+  tabItem.addEventListener('click', () => {
+    tabItems.forEach((item) => item.classList.remove('active'));
+    tabTargets.forEach((target) => target.classList.remove('active'));
+
+    tabItem.classList.add('active');
+    tabTargets[index].classList.add('active');
+  });
+});

@@ -24,23 +24,30 @@
     margin-bottom: 40px;
   }
 
-  &__tab-content {
+  &__tab-info {
     display: grid;
     gap: 30px;
+    margin-bottom: 60px;
     grid-template-columns: 1fr 320px + 90px;
   }
 
-  &__tab-content-wrapper {
+  &__tab-info-wrapper {
     display: flex;
     flex-direction: column;
   }
 
-  &__tab-content-description {
+  &__tab-info-description {
     margin-bottom: 30px;
     font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
     color: #222222;
+  }
+
+  &__tab-tables {
+    display: grid;
+    gap: 40px 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &__tab-item {
@@ -58,6 +65,64 @@
     &.active {
       color: #365edc;
       cursor: default;
+    }
+  }
+
+  &__table-title {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #5e6066;
+    margin-bottom: 16px;
+  }
+
+  &__tab-target {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__cell {
+    flex: 1;
+    padding: 0 10px;
+    margin: 8px 0;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+
+    &:not(:last-child) {
+      border-right: 1px solid #d9d9d9;
+    }
+
+    b {
+      font-family: 'Proxima Nova Bold', sans-serif;
+    }
+  }
+
+  &__header {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    background-color: #f4f6fd;
+    color: #5e6066;
+    border: none;
+
+    .flex-table__cell {
+      border: none;
     }
   }
 }
