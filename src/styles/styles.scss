@@ -16,9 +16,15 @@ html {
   padding: 10px 20px;
   background: #365edc;
   border-radius: 6px;
-  border: none;
+  border-color: transparent;
   white-space: nowrap;
   height: fit-content;
+
+  &_secondary {
+    background: transparent;
+    border: 1px solid #365edc;
+    color: #222222;
+  }
 }
 
 @import 'layouts';
