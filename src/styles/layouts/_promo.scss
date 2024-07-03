@@ -8,16 +8,22 @@
 
   &__text {
     font-family: 'Proxima Nova Semibold', sans-serif;
-    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     max-width: 642px;
     margin: 0;
     color: #222222;
 
+    &_discount {
+      text-transform: uppercase;
+    }
+
     &_blue {
-      font-weight: 900;
       color: #365edc;
+
+      b {
+        font-family: 'Proxima Nova Bold', sans-serif;
+      }
     }
   }
 }

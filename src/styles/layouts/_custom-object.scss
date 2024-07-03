@@ -2,12 +2,16 @@
   display: flex;
   border-radius: 12px;
   background: #f4f6fc;
-  padding: 40px;
+  padding: 0 40px;
   position: relative;
+  max-height: 390px;
+
+  &__content {
+    padding-top: 40px;
+  }
 
   &__title {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 700;
+    font-family: 'Proxima Nova Bold', sans-serif;
     font-size: 36px;
     line-height: 130%;
     color: #222222;
@@ -16,9 +20,7 @@
   }
 
   &__description {
-    font-family: 'Proxima Nova', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Proxima Nova Bold', sans-serif;
     font-size: 20px;
     line-height: 130%;
     color: #222222;
@@ -32,13 +34,23 @@
     max-width: 270px;
   }
 
+  &__button {
+    padding: 18px;
+  }
+
   &__image {
     position: relative;
+
+    &--draft {
+      max-height: 390px;
+      position: relative;
+      left: 22px;
+    }
 
     &--helmet {
       position: absolute;
       bottom: -90px;
-      right: -60px;
+      right: -56px;
       z-index: 1;
     }
   }

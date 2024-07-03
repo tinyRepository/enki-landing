@@ -1,10 +1,10 @@
 .faq {
-  margin-top: 120px;
+  margin-top: 157px;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 16px 30px;
   }
 
   &__item {
@@ -31,6 +31,9 @@
   }
 
   &__item-arrow {
+    margin-right: 26px;
+    margin-top: -15px;
+    padding-left: 15px;
     user-select: none;
     transition: transform 0.3s ease;
   }
@@ -49,6 +52,7 @@
     line-height: 19px;
     color: #222222;
     padding-bottom: 20px;
+    padding-top: 4px;
     transition: all 0.3s ease;
   }
 

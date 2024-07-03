@@ -1,14 +1,15 @@
 .request {
-  margin-top: 120px;
+  margin-top: 160px;
   background: #f5c501;
   border-radius: 6px;
   display: flex;
 
   &__title {
     font-family: 'Proxima Nova Bold', sans-serif;
+    white-space: nowrap;
     font-size: 36px;
     color: #222222;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   &__description {
@@ -28,9 +29,7 @@
 
   &__notice {
     margin-top: 8px;
-    font-family: 'Proxima Nova', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 12px;
     line-height: 130%;
     color: #222222;
@@ -47,7 +46,7 @@
     width: 100%;
     max-width: 250px;
     border-radius: 6px;
-    padding: 12px;
+    padding: 11px;
     background: #ffffff;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
@@ -67,11 +66,11 @@
   }
 
   &__content {
-    padding: 40px;
+    padding: 42px 39px 0;
     padding-right: 0;
   }
 
   &__image {
-    max-height: 363px;
+    max-height: 360px;
   }
 }

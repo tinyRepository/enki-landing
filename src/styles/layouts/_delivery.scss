@@ -1,11 +1,10 @@
 .delivery {
   display: flex;
-  margin-top: 120px;
+  margin-top: 122px;
   gap: 30px;
 
   &__title {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 700;
+    font-family: 'Proxima Nova Bold', sans-serif;
     font-size: 24px;
     color: #222222;
     margin-bottom: 20px;
@@ -30,12 +29,14 @@
     background: #ffcc00;
     border-radius: 0px 0px 12px 12px;
     position: relative;
+    max-width: 326px;
   }
 
   &__crane-container {
     height: 100%;
-    right: -33px;
+    right: -3px;
     position: relative;
+    width: 360px;
   }
 
   &__crane {
@@ -48,16 +49,16 @@
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
 
   &__step-item {
     font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 21px;
     color: #222222;
     position: relative;
-    padding-left: 30px;
+    padding-left: 34px;
     display: flex;
     align-items: center;
 
@@ -80,8 +81,8 @@
     line-height: 130%;
     color: #222222;
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 30px;
+    padding-left: 34px;
+    margin-bottom: 33px;
     display: flex;
     align-items: center;
 
@@ -90,7 +91,7 @@
       position: absolute;
       width: 24px;
       height: 24px;
-      border-radius: 6px;
+      border-radius: 2px;
       background: #fff;
       background-image: url('../../img/check.svg');
       background-repeat: no-repeat;
@@ -103,11 +104,10 @@
     font-family: 'Proxima Nova Bold', sans-serif;
     font-size: 24px;
     color: #222222;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
   }
 
   &__payment-options-list {
-    padding: 0 20px 20px;
-    margin-bottom: 30px;
+    padding: 0 20px 10px;
   }
 }

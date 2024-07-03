@@ -7,7 +7,7 @@
   &__content {
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 20px 40px 22px;
   }
 
   &__discount {
@@ -38,14 +38,12 @@
     line-height: 49px;
     text-transform: uppercase;
     max-width: 500px;
-
+    margin: 30px 0 21px;
     color: #fefeff;
   }
 
   &__description {
-    font-family: 'Proxima Nova', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
     color: #fefeff;
@@ -54,10 +52,12 @@
 
   &__image {
     position: relative;
-    max-width: 489px;
+    max-width: 100%;
     max-height: 295px;
     pointer-events: none;
     user-select: none;
+    width: 467px;
+    height: 287px;
 
     img {
       max-width: 100%;
@@ -66,6 +66,7 @@
 
     &--percent {
       position: relative;
+      left: 10px;
       z-index: 1;
     }
 
