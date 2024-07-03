@@ -20,6 +20,9 @@ html {
   white-space: nowrap;
   height: fit-content;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &_secondary {
     background: transparent;
