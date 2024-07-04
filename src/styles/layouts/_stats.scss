@@ -21,14 +21,14 @@
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     line-height: 42px;
-    color: #222222;
+    color: var(--white_text_black);
   }
 
   &__number-sign {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     line-height: 42px;
-    color: #222222;
+    color: var(--white_text_black);
   }
 
   &__description {
@@ -36,7 +36,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #222222;
+    color: var(--white_text_black);
     text-align: center;
   }
 }

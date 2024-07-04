@@ -19,13 +19,45 @@
       .wrapper {
         display: flex;
         justify-content: center;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
       }
       .content {
         width: 100%;
         max-width: 1039px;
       }
+
+      .theme-switcher {
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+      }
+
+      .theme-selector {
+        text-align: right;
+        max-width: 1348px;
+        margin: 0 auto 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+
+      .theme-switcher img {
+        max-width: 100%;
+      }
     </style>
+
+    <div class="theme-selector">
+      <button class="theme-switcher" onclick="toggleTheme('dark')">
+        <img src="../img/dark.png" alt="" />
+      </button>
+      <button class="theme-switcher" onclick="toggleTheme('light')">
+        <img src="../img/light.png" alt="" />
+      </button>
+    </div>
 
     <div class="wrapper">
       <!-- TODO remove-->
@@ -38,6 +70,7 @@
         />
       </aside>
       <!-- /TODO remove-->
+
       <div class="content">
         @import "header.html"
         <!-- <br /> -->

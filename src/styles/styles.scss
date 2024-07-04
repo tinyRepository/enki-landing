@@ -7,6 +7,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  --white_text_black: #222;
+  --black_bg_black: #fff;
+
+  &.theme-dark {
+    background-color: var(--black_bg_black);
+    color: var(--basic_text_black);
+
+    --white_text_black: white;
+    --black_bg_black: #1b1b1b;
+  }
+}
+
 .button {
   font-family: 'Proxima Nova Bold', sans-serif;
   font-size: 18px;
@@ -26,7 +39,19 @@ html {
   &_secondary {
     background: transparent;
     border: 1px solid #365edc;
-    color: #222222;
+    color: #222;
+  }
+}
+
+:root {
+  --ON_toggle: initial;
+  --OFF_toggle: ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-default {
+    --light: var(--OFF_toggle);
+    --dark: var(--ON_toggle);
   }
 }
 

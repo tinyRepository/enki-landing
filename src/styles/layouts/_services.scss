@@ -4,7 +4,7 @@
   &__title {
     font-family: 'Proxima Nova Bold', sans-serif;
     font-size: 24px;
-    color: #222222;
+    color: var(--white_text_black);
     margin-bottom: 10px;
   }
 
@@ -12,7 +12,7 @@
     font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 16px;
     line-height: 130%;
-    color: #222222;
+    color: var(--white_text_black);
     margin-bottom: 20px;
     max-width: 800px;
   }

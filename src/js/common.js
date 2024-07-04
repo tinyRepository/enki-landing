@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.stats__number');
   const statsSection = document.querySelector('.stats');
-  const duration = 3000;
+  const duration = 2000;
 
   const numberFormat = new Intl.NumberFormat('en-US', {
     useGrouping: true,
@@ -87,3 +87,30 @@ tabItems.forEach((tabItem, index) => {
     tabTargets[index].classList.add('active');
   });
 });
+
+// TODO remove
+// document.getElementById('toggle-theme').addEventListener('click', function () {
+//   const bodyClassList = document.body.classList;
+//   if (bodyClassList.contains('theme-dark')) {
+//     bodyClassList.remove('theme-dark');
+//     bodyClassList.add('theme-light');
+//   } else {
+//     bodyClassList.remove('theme-light');
+//     bodyClassList.add('theme-dark');
+//   }
+// });
+
+function toggleTheme(theme) {
+  const bodyClassList = document.body.classList;
+
+  if (theme === 'dark') {
+    bodyClassList.remove('theme-light', 'theme-default');
+    bodyClassList.add('theme-dark');
+  } else if (theme === 'light') {
+    bodyClassList.remove('theme-dark', 'theme-default');
+    bodyClassList.add('theme-light');
+  } else {
+    bodyClassList.remove('theme-dark', 'theme-light');
+    bodyClassList.add('theme-default');
+  }
+}
