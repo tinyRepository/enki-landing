@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.stats__number');
   const statsSection = document.querySelector('.stats');
-  const duration = 2000;
+  const duration = 3000;
 
   const numberFormat = new Intl.NumberFormat('en-US', {
     useGrouping: true,

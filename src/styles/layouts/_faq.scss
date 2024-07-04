@@ -26,14 +26,35 @@
         &__item-arrow {
           transform: rotate(180deg);
         }
+
+        &__arrow-wrapper {
+          color: #365edc;
+        }
       }
     }
+
+    &:hover {
+      border-color: #365edc;
+
+      .faq {
+        &__item-title {
+          color: #365edc;
+        }
+        &__arrow-wrapper {
+          color: #365edc;
+        }
+      }
+    }
+  }
+
+  &__arrow-wrapper {
+    padding-left: 15px;
+    transition: transform 0.3s ease;
   }
 
   &__item-arrow {
     margin-right: 26px;
     margin-top: -15px;
-    padding-left: 15px;
     user-select: none;
     transition: transform 0.3s ease;
   }
@@ -41,7 +62,7 @@
   &__item-control {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     cursor: pointer;
     user-select: none;
   }
