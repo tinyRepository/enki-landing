@@ -14,6 +14,10 @@
       max-width: inherit;
       height: 56px;
     }
+
+    & .button_secondary {
+      color: var(--white_text_black);
+    }
   }
 
   &__button {
