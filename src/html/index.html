@@ -15,15 +15,12 @@
       }
       aside {
         min-width: 270px;
+        margin-right: 39px;
       }
       .wrapper {
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
-      }
-      .content {
         width: 100%;
-        max-width: 1039px;
       }
 
       .theme-switcher {
@@ -38,6 +35,7 @@
       .theme-selector {
         text-align: right;
         max-width: 1348px;
+        padding: 0 30px;
         margin: 0 auto 30px;
 
         display: flex;
@@ -47,6 +45,12 @@
 
       .theme-switcher img {
         max-width: 100%;
+      }
+
+      @media screen and (max-width: 991px) {
+        aside {
+          display: none;
+        }
       }
     </style>
 
@@ -62,12 +66,7 @@
     <div class="wrapper">
       <!-- TODO remove-->
       <aside>
-        <img
-          src="../img/sidemenu.png"
-          width="270"
-          alt=""
-          style="padding-right: 39px; position: sticky; top: 10px"
-        />
+        <img src="../img/sidemenu.png" width="270" alt="" style="position: sticky; top: 10px" />
       </aside>
       <!-- /TODO remove-->
 
@@ -78,14 +77,18 @@
       <div class="banner__discount">Скидка</div>
       <h1 class="banner__title">На&nbsp;аренду&nbsp;опалубки от 2-х месяцев</h1>
       <p class="banner__description">
-        Закажите аренду опалубки сроком от двух месяцев и скидка будет автоматически применена к
-        вашему заказу.
+        Закажите аренду опалубки сроком от&nbsp;двух месяцев и&nbsp;скидка будет автоматически
+        применена к вашему заказу.
       </p>
     </div>
     <div class="banner__image">
       <img class="banner__image--percent" src="../img/10percent.png" alt="10%" />
       <img class="banner__image--ellipse" src="../img/10percent_ellipse.png" alt="10%" />
     </div>
+    <p class="banner__description-mobile">
+      Закажите аренду опалубки сроком от&nbsp;двух месяцев и&nbsp;скидка будет автоматически
+      применена к вашему заказу.
+    </p>
   </div>
 </div>
 
@@ -119,8 +122,8 @@
 
 <div class="promo">
   <p class="promo__text">
-    Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие
-    вопросы.
+    Оформите заявку на&nbsp;сайте, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+    и&nbsp;ответим на&nbsp;все интересующие вопросы.
   </p>
   <button class="button promo__button">Заказать услугу</button>
 </div>
@@ -130,9 +133,9 @@
   <div class="services__title">Аренда опалубки</div>
 
   <div class="services__description">
-    Мы предоставляем в аренду опалубку в Москве и ближайших регионах с доставкой уже более 5 лет.
-    Наши специалисты подберут для вас необходимое оборудование и комплектацию, для различных типов
-    строительных работ.
+    Мы&nbsp;предоставляем в&nbsp;аренду опалубку в&nbsp;Москве и&nbsp;ближайших регионах
+    с&nbsp;доставкой уже более 5&nbsp;лет. Наши специалисты подберут для вас необходимое
+    оборудование и&nbsp;комплектацию, для различных типов строительных работ.
   </div>
 
   <!-- TODO remove -->
@@ -141,7 +144,7 @@
 
         <!-- <br /> -->
         <div class="prices">
-  <div class="prices__title">Стоимость аренды опалубки и комплектующих</div>
+  <div class="prices__title">Стоимость аренды опалубки и&nbsp;комплектующих</div>
 
   <div class="prices__content">
     <div class="prices__tabs">
@@ -393,6 +396,11 @@
         </div>
       </div>
     </div>
+
+    <div class="prices__mobile-buttons">
+      <button class="button prices__button">Калькулятор</button>
+      <button class="button button_secondary">Скачать прайс</button>
+    </div>
   </div>
 </div>
 
@@ -419,7 +427,7 @@
 
         <!-- <br /> -->
         <div class="calculation-formwork">
-  <div class="calculation-formwork__title">Расчёт опалубки и комплектующих</div>
+  <div class="calculation-formwork__title">Расчёт опалубки и&nbsp;комплектующих</div>
   <div class="calculation-formwork__description">
     В&nbsp;компании &laquo;Энки&raquo; специалисты помогут правильно рассчитать необходимое
     количество опалубки и соответствующих комплектующих для бесперебойной работы
@@ -495,8 +503,8 @@
     <div class="delivery__title">Доставка и самовывоз</div>
 
     <div class="delivery__description">
-      Наш сервис включает как организацию доставки опалубки непосредственно на объект строительства,
-      так и возможность самовывоза по предварительной договорённости.
+      Наш сервис включает как организацию доставки опалубки непосредственно на&nbsp;объект
+      строительства, так и&nbsp;возможность самовывоза по&nbsp;предварительной договорённости.
     </div>
 
     <div class="delivery__steps">
@@ -505,7 +513,8 @@
         время.
       </div>
       <div class="delivery__step-item">
-        Опалубка отгружается в соответствии со спецификацией: исправная, очищенная и смазанная.
+        Опалубка отгружается в&nbsp;соответствии со&nbsp;спецификацией: исправная, очищенная
+        и&nbsp;смазанная.
       </div>
       <div class="delivery__step-item">
         Самовывоз осуществляется со&nbsp;склада на&nbsp;основании паспорта или доверенности.
@@ -535,6 +544,7 @@
 
         <!-- <br /> -->
         <div class="steps">
+  <div class="steps__title-mobile">Всего 5 шагов для заказа опалубки</div>
   <div class="steps__title">Всего 5 шагов для заказа опалубки</div>
 
   <div class="steps__item">
@@ -584,7 +594,7 @@
         <div class="promo">
   <p class="promo__text promo__text_discount">
     <span class="promo__text_blue"><b>Скидка 10%</b></span>
-    при аренде опалубки от 2-х месяцев
+    при аренде опалубки от&nbsp;2-х месяцев
   </p>
   <button class="button promo__button">Заказать услугу</button>
 </div>
@@ -595,11 +605,11 @@
 
   <div class="about__content">
     <div class="about__content-item">
-      Арендный парк площадью более 10 000 м² местоположение Внуково
+      Арендный парк площадью более 10&nbsp;000&nbsp;м&sup2; местоположение Внуково
     </div>
 
     <div class="about__content-item">
-      Персональный менеджер напомнит об окончании периода аренды.
+      Персональный менеджер напомнит об&nbsp;окончании периода аренды.
     </div>
 
     <div class="about__content-item">
@@ -633,7 +643,7 @@
 
         <!-- <br /> -->
         <div class="photo-objects">
-  <div class="photo-objects__title">Наша опалубка на объектах у клиентов</div>
+  <div class="photo-objects__title">Наша опалубка на&nbsp;объектах у&nbsp;клиентов</div>
 
   <div class="photo-objects__content">
     <div class="photo-objects__content-row photo-objects__content-row_top">
@@ -1118,7 +1128,7 @@
     <div class="request__title">Не нашли ответ на вопрос?</div>
 
     <div class="request__description">
-      Оставьте заявку и специалист свяжется с вами в течение нескольких минут
+      Оставьте заявку и&nbsp;специалист свяжется с&nbsp;вами в&nbsp;течение нескольких минут
     </div>
 
     <div class="request__buttons">
@@ -1127,7 +1137,7 @@
     </div>
 
     <div class="request__notice">
-      Нажимая кнопку, вы соглашаетесь с
+      Нажимая кнопку, вы&nbsp;соглашаетесь&nbsp;с
       <a
         href="https://enkimsk.ru/company/politika-konfidencialnosti/"
         target="_blank"

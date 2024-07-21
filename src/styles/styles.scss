@@ -55,6 +55,11 @@ body {
   }
 }
 
+.content {
+  width: 100%;
+  max-width: 1040px;
+}
+
 @import 'layouts';
 
 @import 'media';

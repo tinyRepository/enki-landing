@@ -5,6 +5,17 @@
     max-width: 326px;
   }
 
+  &__mobile-buttons {
+    display: none;
+
+    & .button {
+      display: block;
+      width: 100%;
+      max-width: inherit;
+      height: 56px;
+    }
+  }
+
   &__button {
     max-width: 237px;
   }

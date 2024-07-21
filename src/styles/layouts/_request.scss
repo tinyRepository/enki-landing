@@ -78,5 +78,8 @@
 
   &__image {
     max-height: 360px;
+    pointer-events: none;
+    max-width: 280px;
+    right: -90px;
   }
 }
