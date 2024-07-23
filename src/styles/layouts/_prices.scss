@@ -58,10 +58,15 @@
     color: var(--white_text_black);
   }
 
+  &__table {
+    break-inside: avoid;
+    margin-bottom: 40px;
+  }
+
   &__tab-tables {
-    display: grid;
-    gap: 40px 30px;
-    grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 30px;
   }
 
   &__tab-item {

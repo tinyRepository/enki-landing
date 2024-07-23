@@ -116,6 +116,12 @@
 
     &__tab-tables {
       grid-template-columns: 1fr;
+      display: grid;
+      gap: 40px 30px;
+    }
+
+    &__table {
+      margin-bottom: 0;
     }
 
     &__tab-info {
@@ -248,6 +254,7 @@
 
     &__title-mobile {
       visibility: visible;
+      display: block;
       margin-bottom: 29px;
     }
   }
@@ -462,6 +469,7 @@
 
     &__mobile-buttons {
       margin: 0 16px;
+      display: block;
 
       & .button:first-child {
         margin-top: 40px;
@@ -490,10 +498,6 @@
     &__tab-item {
       font-size: 16px;
       padding: 10px 8px;
-    }
-
-    &__mobile-buttons {
-      display: block;
     }
   }
 
