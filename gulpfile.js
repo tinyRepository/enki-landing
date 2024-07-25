@@ -48,7 +48,7 @@ gulp.task('sass', function () {
   return gulp
     .src('src/styles/**/*.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error', notify.onError()))
-    .pipe(rename({suffix: '.min', prefix: ''}))
+    .pipe(rename({suffix: '-v1.min', prefix: ''}))
     .pipe(
       autoprefixer({
         overrideBrowserslist: ['last 10 versions'],
@@ -82,7 +82,7 @@ gulp.task('clearcache', function () {
 });
 
 gulp.task('buildCss', function () {
-  return gulp.src(['src/css/styles.min.css']).pipe(gulp.dest('dist/css'));
+  return gulp.src(['src/css/styles-v1.min.css']).pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('buildJs', function () {
