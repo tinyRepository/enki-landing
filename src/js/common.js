@@ -88,17 +88,6 @@ tabItems.forEach((tabItem, index) => {
   });
 });
 
-// TODO remove
-// document.getElementById('toggle-theme').addEventListener('click', function () {
-//   const bodyClassList = document.body.classList;
-//   if (bodyClassList.contains('theme-dark')) {
-//     bodyClassList.remove('theme-dark');
-//     bodyClassList.add('theme-light');
-//   } else {
-//     bodyClassList.remove('theme-light');
-//     bodyClassList.add('theme-dark');
-//   }
-// });
 
 function toggleTheme(theme) {
   const bodyClassList = document.body.classList;
