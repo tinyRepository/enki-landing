@@ -70,4 +70,13 @@
     line-height: 130%;
     color: var(--white_text_black);
   }
+
+  &__title-mobile {
+    display: none;
+    visibility: hidden;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--white_text_black);
+  }
 }

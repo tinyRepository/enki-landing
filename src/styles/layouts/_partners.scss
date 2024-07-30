@@ -23,6 +23,11 @@
     align-items: center;
     will-change: transform;
     animation: marquee 20s linear infinite running;
+    cursor: pointer;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }
 

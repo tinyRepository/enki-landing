@@ -72,11 +72,13 @@
   }
 
   &__content {
-    padding: 42px 39px 0;
+    padding: 42px 39px 32px;
     padding-right: 0;
   }
 
   &__image {
     max-height: 360px;
+    pointer-events: none;
+    max-width: 530px;
   }
 }

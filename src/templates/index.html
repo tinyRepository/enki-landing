@@ -15,15 +15,16 @@
       }
       aside {
         min-width: 270px;
+        margin-right: 39px;
       }
+      aside img {
+        border-radius: 6px;
+      }
+
       .wrapper {
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
-      }
-      .content {
         width: 100%;
-        max-width: 1039px;
       }
 
       .theme-switcher {
@@ -38,6 +39,7 @@
       .theme-selector {
         text-align: right;
         max-width: 1348px;
+        padding: 0 30px;
         margin: 0 auto 30px;
 
         display: flex;
@@ -47,6 +49,12 @@
 
       .theme-switcher img {
         max-width: 100%;
+      }
+
+      @media screen and (max-width: 991px) {
+        aside {
+          display: none;
+        }
       }
     </style>
 
@@ -60,42 +68,25 @@
     </div>
 
     <div class="wrapper">
-      <!-- TODO remove-->
-      <aside>
-        <img
-          src="../img/sidemenu.png"
-          width="270"
-          alt=""
-          style="padding-right: 39px; position: sticky; top: 10px"
-        />
-      </aside>
-      <!-- /TODO remove-->
+    <!-- TODO remove-->
+    <aside>
+      <img src="../img/sidemenu.png" width="270" alt="" style="position: sticky; top: 10px" />
+    </aside>
+    <!-- /TODO remove -->
 
       <div class="content">
         @import "header.html"
-        <!-- <br /> -->
         @import "services.html"
-        <!-- <br /> -->
         @import "prices.html"
-        <!-- <br /> -->
         @import "custom-object.html"
-        <!-- <br /> -->
         @import "calculation-formwork.html"
-        <!-- <br /> -->
         @import "delivery.html"
-        <!-- <br /> -->
         @import "steps.html"
-        <!-- <br /> -->
         @import "promo-discount.html"
-        <!-- <br /> -->
         @import "about.html"
-        <!-- <br /> -->
         @import "photo-objects.html"
-        <!-- <br /> -->
         @import "partners.html"
-        <!-- <br /> -->
         @import "faq.html"
-        <!-- <br /> -->
         @import "request.html"
       </div>
     </div>

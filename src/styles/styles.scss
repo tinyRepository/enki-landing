@@ -55,6 +55,15 @@ body {
   }
 }
 
+.content {
+  width: 100%;
+  max-width: 1040px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 @import 'layouts';
 
 @import 'media';

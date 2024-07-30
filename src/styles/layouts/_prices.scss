@@ -5,6 +5,21 @@
     max-width: 326px;
   }
 
+  &__mobile-buttons {
+    display: none;
+
+    & .button {
+      display: block;
+      width: 100%;
+      max-width: inherit;
+      height: 56px;
+    }
+
+    & .button_secondary {
+      color: var(--white_text_black);
+    }
+  }
+
   &__button {
     max-width: 237px;
   }
@@ -43,10 +58,15 @@
     color: var(--white_text_black);
   }
 
+  &__table {
+    break-inside: avoid;
+    margin-bottom: 40px;
+  }
+
   &__tab-tables {
-    display: grid;
-    gap: 40px 30px;
-    grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 30px;
   }
 
   &__tab-item {
@@ -72,7 +92,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
-    color: #5e6066;
+    color: var(--white_text_black);
     margin-bottom: 16px;
     padding-left: 10px;
   }

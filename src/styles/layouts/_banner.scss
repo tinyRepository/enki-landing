@@ -50,6 +50,14 @@
     max-width: 474px;
   }
 
+  &__description-mobile {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fefeff;
+    display: none;
+  }
+
   &__image {
     position: relative;
     max-width: 100%;
